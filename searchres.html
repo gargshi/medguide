@@ -1,0 +1,78 @@
+<html>
+    <head>
+        <title>Search your medicine</title>
+        <link rel="stylesheet" type="text/css" href="Homepage.css"/>
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+	<script src="css/bootstrap.js"></script> 
+	<script src="css/bootstrap.min.js"></script>
+	<script src="css/bootstrap.min.css"></script>
+	<script src="css/bootstrap.css"></script>
+	<script src="css/bootstrap-grid.css"></script> 	 
+	<script src="css/bootstrap-grid.min.css"></script>
+	<script src="css/bootstrap-reboot.css"></script>
+	<script src="css/bootstrap-reboot.min.css"></script>
+        <script src="jquery.min.js"></script>
+        <script>
+            function showUser() {
+                var str=document.getElementById('mname').value;
+                var str1=document.getElementById('pin').value;
+               if (str=="" && str1=="") {
+                    document.getElementById("txtHint").innerHTML = "No result";
+                    return;
+                } else { 
+                    if (window.XMLHttpRequest) {
+                    // code for IE7+, Firefox, Chrome, Opera, Safari
+                    xmlhttp = new XMLHttpRequest();
+                } else {
+                    // code for IE6, IE5
+                xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+                }
+                xmlhttp.onreadystatechange = function() {
+                if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+                    document.getElementById("txtHint").innerHTML = xmlhttp.responseText;
+                }
+            };
+            xmlhttp.open("GET","getit.php?q="+str+"&pin="+str1,true);            
+            xmlhttp.send();
+            
+            }
+            }
+            
+        </script>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        </head>
+    <body>
+        <div id="headertable">
+        <table> 
+            <tr>
+                <td><image src="mediguide.png" height="130" width="200" style="border-radius: 15px; padding-left: 5px; padding-top: 5px"/></td>
+                <td id="bannername">Welcome to Medicine Guide</td>
+                <td id='logsign'>Are a Shopkeeper? <br><a href='loginpageadmin.php' target="_blank">Login</a> or <a href='signingup.php' target="_blank">Signup</a></td>
+            </tr>
+        </table>
+        <div id="menu">
+        <ul>
+            <li><a href="Home.html" title="Home">Home</a></li>
+            <li style="margin-left: 400px"><a href="#" title="Help Desk">Help</a></li>         
+        </ul>
+        </div>
+        </div>
+        <br><br>
+        <br><br>
+        <div id="SearchBox">
+            <p style="font-size: 25px">Search your Medicine</p>
+            <form>
+                <table>
+                    <tr>
+                        <td><input type="text" placeholder="Enter the medicine name here" id="mname" onkeyup="showUser()"/></td><td>&nbsp;&nbsp;or&nbsp;&nbsp;</td>
+                        <td><input type="text" placeholder="Enter the pincode here" id="pin" onkeyup="showUser()"/></td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+            <div id="txtHint">
+        </div>
+        
+    </body>
+</html>

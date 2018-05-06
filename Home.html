@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+
+        <title>Medicine Guide</title>
+        <link rel="shortcut icon" href="mediguidelogo.ico">
+        <link rel="stylesheet" type="text/css" href="Homepage.css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="bootstrap.min.css">
+    <script src="jquery.min.js"></script>
+    <script src="bootstrap.min.js"></script>
+        <script src="jquery.min.js"></script>
+        <script src="sidebarjs.js"></script>
+        <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+        <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+        <meta charset="utf-8" />
+        <link href="jQuery-bootstrap-master/jQuery-bootstrap-master/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+        <link href="jQuery-bootstrap-master/jQuery-bootstrap-master/css/bootstrap-theme.min.css" rel="stylesheet" type="text/css" />
+        <link href="jQuery-bootstrap-master/jQuery-bootstrap-master/css/site.css" rel="stylesheet" type="text/css" />
+        <script src="http://code.jquery.com/jquery-1.10.2.min.js" type="text/javascript"></script>
+        <script src="jQuery-bootstrap-master/jQuery-bootstrap-master/scripts/jquery.bootstrap.newsbox.min.js" type="text/javascript"></script>
+    
+        <!-- Preview Styles -->
+
+        <script>
+             $(document).ready(function(){
+            // Add smooth scrolling to all links
+              $("a").on('click', function(event) {
+            
+            // Make sure this.hash has a value before overriding default behavior
+            if (this.hash !== "") {
+            // Prevent default anchor click behavior
+                event.preventDefault();
+                
+        // Store hash
+             var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+              $('html, body').animate({
+              scrollTop: $(hash).offset().top
+                }, 1000, function(){
+   
+            // Add hash (#) to URL when done scrolling (default click behavior)
+            window.location.hash = hash;
+             });
+            } // End if
+          });
+        });
+        </script>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        
+        <div id="headertable" style='background-color: rgba(0,0,0,1)'>
+        <table> 
+            <tr>
+                <td><image src="mediguide.jpeg" title="Click to reveal a side menu" height="133" width="210" style="z-index: 10000; border-radius: 15px; padding-left: 5px; padding-top: 5px" onclick="openNav()"/></td>
+                <td id="bannername"><!--h1 style="font-family: Calibri">Medicine Guide</h1-->
+                    <div class="page-header">
+                        <h1 style="font-family: Calibri; padding-left:200px; padding-right: 200px; font-size: 50px">Medicine Guide</h1>
+                    </div>
+                </td>                  
+            </tr>
+        </table>
+        <!--div id="menu">
+        <ul>
+            <li><a href="#About_Us_Cover" title="Know about us">About us</a></li>
+            <li><a href="#SearchBox_Cover" title="Search your Medicine">Search Medicine</a></li>
+            <li><a href="#Categories_Cover" title="Search by category">Categories</a></li>
+            <li><a href="#HelpBox_Cover" title="Help Desk">Help</a></li>         
+        </ul>
+        </div-->
+
+         <nav class="navbar navbar-inverse"> 
+          
+        <div class="container-fluid" style="background-color: black">
+                    
+            <ul class="nav navbar-nav">
+            <li>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</li>
+            <li>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</li>
+            <li>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</li>
+            <li>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</li>
+            <li>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</li>
+            <li>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</li>
+            <li>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</li>
+            <li>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</li>
+            <li><a href="#" id="navlnk" style="font-size: 17px"><b>Home</b></a></li>
+            <li><a href="#WhatsnewCover" id="navlnk" style="font-size: 16px"><b>What's New</b></a></li>
+            <li><a href="#About_Us_Cover" id="navlnk" style="font-size: 16px"><b>About Us</b></a></li>
+            <li><a href="#SearchBox_Cover" id="navlnk" style="font-size: 16px"><b>Search</b></a></li>
+            <li><a href="#Categories_Cover" id="navlnk" style="font-size: 16px"><b>Categories</b></a></li>
+            <li><a href="#HelpBox_Cover" id="navlnk" style="font-size: 16px"><b>Help Desk</b></a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="login-sign-in/logsign.html" style="color: white"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+            <li><a href="login-sign-in/login.html" style="color: white"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+          </ul>
+      </div>
+
+      </nav>
+        </div>
+        <br><br><br><br><br><br><br>
+        
+        
+<div class="myslideshow" id='myslideshow'>
+    <div><image src="sliderimage1.jpg" style='height: 550px; width: 1400px; overflow: hidden;'/></div>
+    <div><image src="sliderimage2.jpg" style='height: 550px; width: 1400px; overflow: hidden'/></div>
+    <div><image src="sliderimage3.jpg" style='height: 550px; width: 1400px; overflow: hidden'/></div>
+    <div><image src="sliderimage4.jpg" style='height: 550px; width: 1400px; overflow: hidden'/></div>
+  </div>
+        <script type="text/javascript" src="slick/slick.min.js"></script>
+        <script type="text/javascript" src="slick/slick.js"></script>
+         <script type="text/javascript">
+    $(document).ready(function(){
+      $('.myslideshow').slick({
+               autoplay:true             
+      });
+     
+    });
+  </script>
+  
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="#About_Us_Cover">About</a>
+            <a href="#SearchBox_Cover">Search</a>
+            <a href="#WhatsnewCover">What's New</a>
+            <a href="#Categories_Cover">Categories</a>
+            <a href="#HelpBox_Cover">Help Desk</a>
+          </div>
+        <br><br><br>
+        <div id="WhatsnewCover">  
+            <br><br><br><br><br><br><br><br><br><br>            
+        <div class="container" style="background:rgba(0,0,0,0.5);border-radius:10px">
+            <p align="center" style="color: white; font-size: 30px">What's New</p>
+            <br>
+            <div class="row">     
+                <div class="col-md-4" style="z-index:12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <span class="glyphicon glyphicon-list-alt"></span><b>News</b></div>
+                                <div class="panel-body">
+                                    <div class="row">
+                                        <div class="col-xs-12">
+                                            <ul id="demo3">
+                                                <li class="news-item">Curabitur porttitor ante eget hendrerit adipiscing. Maecenas at magna accumsan,
+                                                    rhoncus neque id, fringilla dolor. <a href="#">Read more...</a></li>
+                                                <li class="news-item">Curabitur porttitor ante eget hendrerit adipiscing. Maecenas at magna accumsan,
+                                                    rhoncus neque id, fringilla dolor. <a href="#">Read more...</a></li>
+                                                <li class="news-item">Praesent ornare nisl lorem, ut condimentum lectus gravida ut. Ut velit nunc, vehicula
+                                                    volutpat laoreet vel, consequat eu mauris. <a href="#">Read more...</a></li>
+                                                <li class="news-item">Nunc ultrices tortor eu massa placerat posuere. Vivamus viverra sagittis nunc. Nunc
+                                                    et imperdiet magna. Mauris sed eros nulla. <a href="#">Read more...</a></li>
+                                                <li class="news-item">Morbi sodales tellus sit amet leo congue bibendum. Ut non mauris eu neque fermentum
+                                                    pharetra. <a href="#">Read more...</a></li>
+                                                <li class="news-item">In pharetra suscipit orci sed viverra. Praesent at sollicitudin tortor, id sagittis
+                                                    magna. Fusce massa sem, bibendum id. <a href="#">Read more...</a> </li>
+                                                <li class="news-item">Maecenas nec ligula sed est suscipit aliquet sed eget ipsum. Suspendisse id auctor
+                                                    nibh. Ut porttitor volutpat augue, non sodales odio dignissi id. <a href="#">Read more...</a></li>
+                                                <li class="news-item">Onec bibendum consectetur diam, nec euismod urna venenatis eget. Cras consequat
+                                                    convallis leo. <a href="#">Read more...</a> </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="panel-footer">
+            
+                                </div>
+                            </div>
+                        </div>
+                    <div class="col-md-4">
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <span class="glyphicon glyphicon-list-alt"></span><b>Government Policies</b></div>
+                                            <div class="panel-body">
+                                                <div class="row">
+                                                    <div class="col-xs-12">
+                                                        <ul id="demo2">
+                                                            <li class="news-item">Curabitur porttitor ante eget hendrerit adipiscing. Maecenas at magna accumsan,
+                                                                rhoncus neque id, fringilla dolor. <a href="#">Read more...</a></li>
+                                                            <li class="news-item">Curabitur porttitor ante eget hendrerit adipiscing. Maecenas at magna accumsan,
+                                                                rhoncus neque id, fringilla dolor. <a href="#">Read more...</a></li>
+                                                            <li class="news-item">Praesent ornare nisl lorem, ut condimentum lectus gravida ut. Ut velit nunc, vehicula
+                                                                volutpat laoreet vel, consequat eu mauris. <a href="#">Read more...</a></li>
+                                                            <li class="news-item">Nunc ultrices tortor eu massa placerat posuere. Vivamus viverra sagittis nunc. Nunc
+                                                                et imperdiet magna. Mauris sed eros nulla. <a href="#">Read more...</a></li>
+                                                            <li class="news-item">Morbi sodales tellus sit amet leo congue bibendum. Ut non mauris eu neque fermentum
+                                                                pharetra. <a href="#">Read more...</a></li>
+                                                            <li class="news-item">In pharetra suscipit orci sed viverra. Praesent at sollicitudin tortor, id sagittis
+                                                                magna. Fusce massa sem, bibendum id. <a href="#">Read more...</a> </li>
+                                                            <li class="news-item">Maecenas nec ligula sed est suscipit aliquet sed eget ipsum. Suspendisse id auctor
+                                                                nibh. Ut porttitor volutpat augue, non sodales odio dignissi id. <a href="#">Read more...</a></li>
+                                                            <li class="news-item">Onec bibendum consectetur diam, nec euismod urna venenatis eget. Cras consequat
+                                                                convallis leo. <a href="#">Read more...</a> </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="panel-footer">
+                        
+                                            </div>
+                                        </div>
+                                    </div>
+                    <div class="col-md-4">
+                                            <div class="panel panel-default">
+                                                <div class="panel-heading">
+                                                    <span class="glyphicon glyphicon-list-alt"></span><b>Quick Health Tips</b></div>
+                                                        <div class="panel-body">
+                                                            <div class="row">
+                                                                <div class="col-xs-12">
+                                                                    <ul id="demo1">
+                                                                        <li class="news-item">Curabitur porttitor ante eget hendrerit adipiscing. Maecenas at magna accumsan,
+                                                                            rhoncus neque id, fringilla dolor. <a href="#">Read more...</a></li>
+                                                                        <li class="news-item">Curabitur porttitor ante eget hendrerit adipiscing. Maecenas at magna accumsan,
+                                                                            rhoncus neque id, fringilla dolor. <a href="#">Read more...</a></li>
+                                                                        <li class="news-item">Praesent ornare nisl lorem, ut condimentum lectus gravida ut. Ut velit nunc, vehicula
+                                                                            volutpat laoreet vel, consequat eu mauris. <a href="#">Read more...</a></li>
+                                                                        <li class="news-item">Nunc ultrices tortor eu massa placerat posuere. Vivamus viverra sagittis nunc. Nunc
+                                                                            et imperdiet magna. Mauris sed eros nulla. <a href="#">Read more...</a></li>
+                                                                        <li class="news-item">Morbi sodales tellus sit amet leo congue bibendum. Ut non mauris eu neque fermentum
+                                                                            pharetra. <a href="#">Read more...</a></li>
+                                                                        <li class="news-item">In pharetra suscipit orci sed viverra. Praesent at sollicitudin tortor, id sagittis
+                                                                            magna. Fusce massa sem, bibendum id. <a href="#">Read more...</a> </li>
+                                                                        <li class="news-item">Maecenas nec ligula sed est suscipit aliquet sed eget ipsum. Suspendisse id auctor
+                                                                            nibh. Ut porttitor volutpat augue, non sodales odio dignissi id. <a href="#">Read more...</a></li>
+                                                                        <li class="news-item">Onec bibendum consectetur diam, nec euismod urna venenatis eget. Cras consequat
+                                                                            convallis leo. <a href="#">Read more...</a> </li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="panel-footer">
+                                    
+                                                        </div>
+                                                    </div>
+                                                </div>            
+                    </div>
+                </div>  
+    <script type="text/javascript">
+        $(function () {
+            $("#demo3").bootstrapNews({
+                newsPerPage: 3,
+                autoplay: true,
+                
+                onToDo: function () {
+                    //console.log(this);
+                }
+            });
+            $("#demo2").bootstrapNews({
+                newsPerPage: 3,
+                autoplay: true,
+                
+                onToDo: function () {
+                    //console.log(this);
+                }
+            });
+            $("#demo1").bootstrapNews({
+                newsPerPage: 3,
+                autoplay: true,
+                
+                onToDo: function () {
+                    //console.log(this);
+                }
+            });
+        });
+    </script>
+</div>
+       <div id="About_Us_Cover">
+            <br><br><br><br><br><br><br><br>
+            <div id="About_Us">
+            <h1>About Medicine Guide</h1>
+            <br><br>
+            Medicine Guide is an initiative to help users easily find nearest Medicine Shops according to their location.
+            It is useful in situations when you want to find about your medicine availability in the nearest dispensary or pharmacy.
+                 <br>This site is developed by the team Debuggers. <a href="#">Know more about us</a>
+                 <br>This site also provides you with the best options of alternatives if your chosen medicine doesnt appear to be present.
+            </div>    </div>
+        <div id="SearchBox_Cover">
+            <br><br><br><br>
+        <div id="SearchBox_Home">
+            
+            <h2>Search Your Medicine</h2>
+            The site provides Functionality of Searching your Medicine Shop by the various parameters of selection like:
+            <ul>
+                <li>Medicine name</li>
+                <li>Pincode</li>
+            </ul>
+            Proceed to Search <a href="searchres.html">here</a>
+        </div></div>
+        <div id="Categories_Cover">
+            <br><br><br><br>
+        <div id="Categories">
+            
+            <h1>Categories</h1>   
+            The Available Medicines can be categorized in the following categories:-
+            <ul>
+                <li>Related to Digestive System</li>
+                <li>Related to Cardiovascular System</li>
+                <li>Related to Central Nervous System</li>
+                <li>Pain killers</li>
+                <li>Related to Anasthesia</li>
+                <li>Related to Musculo-Skeletal Disorders</li>
+                <li>Related to Diseases of the Eye</li>
+                <li>Related to Ear, Nose diseases</li>
+                <li>Related to Respiratory Problems</li>
+                <li>Related to Endocrine diseases</li>
+                <li>Related to Reproductive or Urinary System</li>
+                <li>Related to Contraception</li>
+                <li>Related to Gynecology</li>
+                <li>Related to Skin related diseases</li>
+                <li>Related to Infections</li>
+                <li>Related to Immune Systems</li>
+                <li>Related to Allergic Disorders</li>
+                <li>Related to Nutrition</li>
+                <li>Related to Neoplastic Disorders</li>
+                <li>Related to Diagnostics</li>
+                <li>Related to Eusthansia</li>
+                <li>Related to Digestive System</li>
+            </ul>
+        </div>
+        </div>
+  <div id="HelpBox_Cover">
+            <br><br><br><br>
+        <div id="HelpBox">
+            
+            <h2>Help Desk</h2>
+            Having difficulty browsing the site, visit our <a href="helpcust.html">Help Desk</a>.
+        </div></div>
+        <div id="footertable">
+ 
+            
+                
+            
+        <table> 
+            <tr>
+                <td><image src="mediguide.jpeg" height="130" width="200" style="border-radius: 15px; padding-left: 5px; padding-top: 5px"/></td>
+                <td style="color:white">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspCreated by Team Debuggers. <a>Know about us here.</a></td><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                <td style="color:white">Contact Us</td>
+                <td><a href="#" class="fa fa-facebook"></a></td>
+                <td><a href="#" class="fa fa-twitter"></a></td>
+                
+            </tr>
+        </table>
+        </div>
+    </body>
+</html>

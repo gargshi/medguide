@@ -1,0 +1,263 @@
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+.fa {
+    padding: 20px;
+    font-size: 100px;
+    width: 55px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 50%;
+
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+.sidenav {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 130000; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    background-color: #111; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+/* The navigation menu links */
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 15px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 26px;
+    margin-left: 50px;
+}
+#navlnk{
+    transition: 1.5s; 
+    animation-name: fade; 
+    animation-duration: 0.2s;
+}
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+    transition: margin-left .5s;
+    padding: 20px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 15px;}
+}
+body{
+    background-image: url('capsulesdarkened.jpg');
+    font-family: Calibri; 
+}
+#headertable{
+    position:fixed;
+    background-color: rgba(0,0,0,0.5);
+    width:100%;
+    z-index: 100000;
+}
+#footertable{
+    
+    background-color: rgba(0,0,0,0.5);
+}
+#bannername{
+    font-size: 60px;
+    color: white;
+    
+    font-family: Calibri;
+    padding-left: 100px;
+}
+#logsign{
+    font-size: 20px;
+    color: white;
+    padding-left: 100px;
+}
+#logsign a{
+    color: white;
+} 
+#logsign a:hover{
+    color: red;
+    
+}
+#About_Us_Cover{
+    z-index: 12;
+    
+    //margin-top: 100px;
+}
+#About_Us{
+    
+    color: white;
+    margin-left: 250px;
+    padding: 20px;
+    height: 350px;
+    width: 900px;
+    background-color: rgba(0,0,0,0.5);
+    font-size: 19px;
+    font-family: Arial;
+    z-index: 12;
+     
+}
+#SearchBox_Home{
+    color: white;
+    margin-left: 250px;
+    margin-top: 100px;
+    padding: 20px;
+    height: 400px;
+    width: 900px;
+    background-color: rgba(0,0,0,0.5);
+    font-size: 19px;
+    font-family: Helvetica;
+}
+#SearchBox{
+    color: white;
+    margin-left: 250px;
+    margin-top: 100px;
+    padding: 20px;
+    height: 200px;
+    width: 900px;
+    background-color: rgba(0,0,0,0.5);
+    font-size: 19px;
+    font-family: Helvetica;
+     
+}
+
+#SearchBox table{
+    margin-left: 20px;
+    margin-top: 50px;
+    padding-right: 5px;
+    color: white;
+}
+#SearchBox table input{
+    height: 40px;
+    width: 400px;
+    padding-left: 25px;
+    border-radius: 5px;
+}
+#SearchBox table input:focus{
+    border-radius: 5px;
+}
+#Categories{
+    color: white;
+    margin-left: 300px;
+    margin-top: 100px;
+    padding: 20px;
+    height: 800px;
+    width: 800px;
+    background-color: rgba(0,0,0,0.5);
+    font-size: 19px;
+    font-family: Calibri;
+     
+}
+#txtHint{
+    color: white;
+    
+    margin-left: 5px;
+    padding: 0px;
+    height: 800px;
+    width: 1330px;
+    padding: 20px;
+    background-color: rgba(0,0,0,0.5);
+    font-size: 19px;
+    font-family: Helvetica;
+}
+#menu{
+    
+    //margin-top:100px;
+    margin-left:300px;
+    
+    background-color: rgba(0,0,0,0.5);
+    
+    height:50px;
+    width:790px;
+    
+}
+.container-fluid: hover{
+    transition: 1.5s;
+    animation-name: fade;
+    animation-duration: 0.2s;
+}
+#menu ul 
+{
+    
+  list-style:none;
+  padding-left: 50px;
+  margin-left: 10px;
+}
+#menu ul li
+{
+    background-color: #9900cc; 
+   height:35px;
+   width:160px;
+   margin-left:0px;
+   margin-right: 5px;    
+   border-radius: 5px;
+   font-family: Arial;
+   line-height:35px;
+   float:left;
+   text-align:center; 
+}   
+#menu ul li a
+{
+    color:white;
+    font-weight:bold;
+    font-family:Arial;
+    font-size:15px;
+    text-decoration:none;
+    display:block;
+}
+#myslideshow{
+    margin-left:25px;
+    margin-right: 25px;
+    z-index: -11;
+    margin-bottom:0px;
+    padding-bottom: 0px;
+    width: 95%;
+}
+#HelpBox{
+    color: white;
+    margin-left: 300px;
+    margin-top: 100px;
+    padding: 20px;
+    height: 400px;
+    width: 800px;
+    background-color: rgba(0,0,0,0.5);
+    font-size: 19px;
+    font-family: Helvetica;
+}
+#maincontenthelp{
+    color: white;
+    margin-left: 300px;
+    margin-top: 100px;
+    padding: 20px;
+    height: 800px;
+    width: 800px;
+    background-color: rgba(0,0,0,0.5);
+    font-size: 19px;
+    font-family: Helvetica;
+}

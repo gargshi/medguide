@@ -1,0 +1,52 @@
+#headertable1{
+    
+    background-color: rgba(0,0,0,0.5);
+    font-family: Calibri;
+}
+#bannername{
+    font-size: 60px;
+    color: white;
+    padding-left: 100px;
+}
+body{
+    background-image: url("capsulesdarkened.jpg");
+    color: white;
+    font-family: Helvetica;
+}
+#body{
+    margin-top: 100px;
+    background-color: rgba(0,0,0,0.5);
+    margin-left: 350px;
+    font-size: 17px;
+    width: 600px;
+    height: 230px;
+}
+#formtable{
+    padding: 10px;
+}
+#body #usnenter{
+    height: 25px;
+    width: 250px;
+    border-radius: 5px;
+    font-size: 20px;
+    padding-left: 10px;
+    font-family: Calibri;
+}
+#body #usnenter:active{
+    border-radius: 5px;
+}
+#body #uploadbutton{
+    height: 45px;
+    width: 250px;
+    background-color: #660099;
+    border-radius: 5px;
+    border-color: #660099;
+    color: white;
+    font-size: 17px;
+    padding-left: 10px;
+    font-family: Calibri;
+}
+#body #uploadbutton:hover{
+    background-color: black;
+    border-color: black;
+}

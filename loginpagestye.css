@@ -1,0 +1,104 @@
+body{
+        background-image: url('capsules.jpg');
+        
+    }
+    #error{
+        background-color: red;
+        margin-bottom: 30px;
+        height: 20px;
+        width: 500px;
+    }
+    input{
+        height:30px;
+        width:400px;
+        font-family: Calibri;
+        font-size: 20px;
+        border-radius: 5px;
+        border-color:transparent;    
+        text-indent: 10px;
+        
+    }
+    #textpass {
+        margin-top: 20px;
+        margin-bottom: 0px;
+    }
+    #submit_button:hover{
+        background-color: black;
+        border-color: transparent;
+    }
+    
+    #submit_button
+    {
+        border-radius:10px;
+        
+        width:200px;
+        height:50px;
+        font-size: 24px;
+        background-color: #9933ff;
+        color:white;
+        border-color:transparent;
+        cursor: pointer;
+        
+    }
+#Details
+{
+    
+  //display:none;
+  
+  border-radius: 10px;
+  /*background-color: rgba(0,0,0,0.5);*/
+ width:800px;
+  
+  border:2px green;
+  font-family:"Georgia";
+  font-size:20px;
+}
+#codefalconlink{
+    
+    margin-left:750px;
+    height: 20px;
+    width: 550px;
+    text-align: center;
+    color: white;
+    background-color: rgba(0,0,0,0.5);
+    font-family: Arial;
+    font-size: 17px; 
+    margin-top: 50px;    
+}
+a{
+    color: white;
+}
+a:hover{
+  color: white;  
+}
+#sign_up_sugg
+{
+    background-color: black;
+    
+    width: 300px;
+    height: 25px;
+}
+#sign_up_sugg p{
+    
+    color: white;
+    font-family: Arial;
+    font-size:15px;
+}
+#sign_up_sugg a{
+    color: white;
+}
+#sign_up_sugg a:hover{
+    color: lightblue;
+}
+#login
+{
+    background-color: rgba(0,0,0,0.5);
+    width: 70%;
+   margin-top: 50px;
+  cursor: default;
+  color:white;
+  font-family:'Arial';
+  font-size:50px;
+  
+    
+}

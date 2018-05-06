@@ -1,0 +1,29 @@
+
+#stocks{
+    background-color:rgba(0,0,0,0.5);
+    font-family: Arial;
+    margin: 30px;
+    color: white;
+    margin-left:100px;
+    margin-right:100px;
+}
+#medlist{
+    padding: 10px;
+    
+}
+#stocks input{
+    margin-top: 40px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    font-family: Calibri;
+    font-size: 20px;
+    color: white;
+    background-color: #9523b9;
+    border-color:#9523b9; 
+    height: 50px;
+    width: 300px;
+}
+#stocks input:hover{
+    background-color: black;
+    border-color:black; 
+}
