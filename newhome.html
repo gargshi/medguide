@@ -3,14 +3,21 @@
   <head>
     <title>Medicine Guide- Home</title>
     <link rel="shortcut icon" href="mediguidelogo.ico">
-    <meta charset="utf-8">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+       <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">  
+  
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">  
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script src="jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/javascript.util/0.12.12/javascript.util.min.js"></script>
+    <script src="http://code.jquery.com/jquery-1.10.2.min.js" type="text/javascript"></script>
+    <script src="jQuery-bootstrap-master/jQuery-bootstrap-master/scripts/jquery.bootstrap.newsbox.min.js" type="text/javascript"></script>
+    <link href="jQuery-bootstrap-master/jQuery-bootstrap-master/css/site.css" rel="stylesheet" type="text/css" />
+    <link href="jQuery-bootstrap-master/jQuery-bootstrap-master/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="jQuery-bootstrap-master/jQuery-bootstrap-master/css/bootstrap-theme.min.css" rel="stylesheet" type="text/css" />
     <script>
              $(document).ready(function(){
             // Add smooth scrolling to all links
@@ -48,24 +55,36 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
           <li class="nav-item">
-          <a class="nav-link active" href="newhome.html">Home<span class="sr-only">(current)</span></a>
+          <a class="nav-link active" href="newhome.html">Home&nbsp&nbsp<span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="docpatdet.html">What's New</a>
+            <a class="nav-link" href="#whatsnew">What's New&nbsp&nbsp</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">About Us</a>
+            <a class="nav-link" href="#aboutus">About Us&nbsp&nbsp</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Search</a>
+            <a class="nav-link" href="#search">Search&nbsp&nbsp</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Categories</a>
+            <a class="nav-link" href="#category">Categories&nbsp&nbsp</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Help Desk</a>
+            <a class="nav-link" href="#helpdesk">Help Desk</a>
           </li>
         </ul>
+        <style>
+          #cs:hover{
+            background-color: #3f4241;
+            transition: 1.5s;
+            animation-name: fade;
+            animation-duration: 0.2s;            
+          }
+        </style>
+        <ul class="nav navbar-right" style="font-size: 15px">
+            <li><a href="login-sign-in/logsign.html" style="color: white" id="cs"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+            <li><a href="login-sign-in/login.html" style="color: white" id="cs"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+          </ul>
       </div>
     </nav>
     
@@ -76,26 +95,260 @@
 
           })
       </script-->
-      <div class="carousel-inner">
+      <style>.responsive{ max-height: 500px; }</style>
+      <div class="carousel-inner responsive">
         <div class="carousel-item active">
-          <img class="d-block w-100" src="sliderimage1.jpg" style="height: 500px" alt="First slide">
+          <img class="d-block w-100 responsive" src="sliderimage1.jpeg"  alt="First slide">
         </div>
         <div class="carousel-item">
-          <img class="d-block w-100" src="sliderimage2.jpg" style="height: 500px" alt="Second slide">
+          <img class="d-block w-100 responsive" src="sliderimage2.jpeg"  alt="Second slide">
         </div>
         <div class="carousel-item">
-          <img class="d-block w-100" src="sliderimage3.jpg" style="height: 500px" alt="Third slide">
+
+          <img class="d-block w-100 responsive" src="sliderimage3.jpeg"  alt="Third slide">
         </div>
       </div>
-      <a class="carousel-control-prev" href="#carouselExampleControls" role="button" style="background-color: rgba(0,0,0,0.5); width: 100px; height: 100px; margin-top: 200px" data-slide="prev">
+      <a class="carousel-control-prev responsive" href="#carouselExampleControls" role="button" style="color: white; margin-top: auto" data-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
         <span class="sr-only">Previous</span>
       </a>
-      <a class="carousel-control-next" href="#carouselExampleControls" role="button" style="background-color: rgba(0,0,0,0.5); width: 100px; height: 100px; margin-top: 200px" data-slide="next">
+      <a class="carousel-control-next responsive" href="#carouselExampleControls" role="button" style="color:white; margin-top: auto" data-slide="next">
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
         <span class="sr-only">Next</span>
       </a>
     </div>
-   
+
+    <br><br><br>
+
+   <div class="container" id="whatsnew">
+    <div class="container" style="background:rgba(0,0,0,0.5);border-radius:10px">
+            <p align="center" style="color: white; font-size: 30px">What's New</p>
+            <br>
+            <div class="row">     
+                <div class="col-md-4" style="z-index:12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <span class="glyphicon glyphicon-list-alt"></span><b>News</b></div>
+                                <div class="panel-body">
+                                    <div class="row">
+                                        <div class="col-xs-12">
+                                            <ul id="demo3">
+                                                <li class="news-item">Curabitur porttitor ante eget hendrerit adipiscing. Maecenas at magna accumsan,
+                                                    rhoncus neque id, fringilla dolor. <a href="#">Read more...</a></li>
+                                                <li class="news-item">Curabitur porttitor ante eget hendrerit adipiscing. Maecenas at magna accumsan,
+                                                    rhoncus neque id, fringilla dolor. <a href="#">Read more...</a></li>
+                                                <li class="news-item">Praesent ornare nisl lorem, ut condimentum lectus gravida ut. Ut velit nunc, vehicula
+                                                    volutpat laoreet vel, consequat eu mauris. <a href="#">Read more...</a></li>
+                                                <li class="news-item">Nunc ultrices tortor eu massa placerat posuere. Vivamus viverra sagittis nunc. Nunc
+                                                    et imperdiet magna. Mauris sed eros nulla. <a href="#">Read more...</a></li>
+                                                <li class="news-item">Morbi sodales tellus sit amet leo congue bibendum. Ut non mauris eu neque fermentum
+                                                    pharetra. <a href="#">Read more...</a></li>
+                                                <li class="news-item">In pharetra suscipit orci sed viverra. Praesent at sollicitudin tortor, id sagittis
+                                                    magna. Fusce massa sem, bibendum id. <a href="#">Read more...</a> </li>
+                                                <li class="news-item">Maecenas nec ligula sed est suscipit aliquet sed eget ipsum. Suspendisse id auctor
+                                                    nibh. Ut porttitor volutpat augue, non sodales odio dignissi id. <a href="#">Read more...</a></li>
+                                                <li class="news-item">Onec bibendum consectetur diam, nec euismod urna venenatis eget. Cras consequat
+                                                    convallis leo. <a href="#">Read more...</a> </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="panel-footer">
+            
+                                </div>
+                            </div>
+                        </div>
+                    <div class="col-md-4">
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <span class="glyphicon glyphicon-list-alt"></span><b>Government Policies</b></div>
+                                            <div class="panel-body">
+                                                <div class="row">
+                                                    <div class="col-xs-12">
+                                                        <ul id="demo2">
+                                                            <li class="news-item">Curabitur porttitor ante eget hendrerit adipiscing. Maecenas at magna accumsan,
+                                                                rhoncus neque id, fringilla dolor. <a href="#">Read more...</a></li>
+                                                            <li class="news-item">Curabitur porttitor ante eget hendrerit adipiscing. Maecenas at magna accumsan,
+                                                                rhoncus neque id, fringilla dolor. <a href="#">Read more...</a></li>
+                                                            <li class="news-item">Praesent ornare nisl lorem, ut condimentum lectus gravida ut. Ut velit nunc, vehicula
+                                                                volutpat laoreet vel, consequat eu mauris. <a href="#">Read more...</a></li>
+                                                            <li class="news-item">Nunc ultrices tortor eu massa placerat posuere. Vivamus viverra sagittis nunc. Nunc
+                                                                et imperdiet magna. Mauris sed eros nulla. <a href="#">Read more...</a></li>
+                                                            <li class="news-item">Morbi sodales tellus sit amet leo congue bibendum. Ut non mauris eu neque fermentum
+                                                                pharetra. <a href="#">Read more...</a></li>
+                                                            <li class="news-item">In pharetra suscipit orci sed viverra. Praesent at sollicitudin tortor, id sagittis
+                                                                magna. Fusce massa sem, bibendum id. <a href="#">Read more...</a> </li>
+                                                            <li class="news-item">Maecenas nec ligula sed est suscipit aliquet sed eget ipsum. Suspendisse id auctor
+                                                                nibh. Ut porttitor volutpat augue, non sodales odio dignissi id. <a href="#">Read more...</a></li>
+                                                            <li class="news-item">Onec bibendum consectetur diam, nec euismod urna venenatis eget. Cras consequat
+                                                                convallis leo. <a href="#">Read more...</a> </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="panel-footer">
+                        
+                                            </div>
+                                        </div>
+                                    </div>
+                    <div class="col-md-4">
+                                            <div class="panel panel-default">
+                                                <div class="panel-heading">
+                                                    <span class="glyphicon glyphicon-list-alt"></span><b>Quick Health Tips</b></div>
+                                                        <div class="panel-body">
+                                                            <div class="row">
+                                                                <div class="col-xs-12">
+                                                                    <ul id="demo1">
+                                                                        <li class="news-item">Curabitur porttitor ante eget hendrerit adipiscing. Maecenas at magna accumsan,
+                                                                            rhoncus neque id, fringilla dolor. <a href="#">Read more...</a></li>
+                                                                        <li class="news-item">Curabitur porttitor ante eget hendrerit adipiscing. Maecenas at magna accumsan,
+                                                                            rhoncus neque id, fringilla dolor. <a href="#">Read more...</a></li>
+                                                                        <li class="news-item">Praesent ornare nisl lorem, ut condimentum lectus gravida ut. Ut velit nunc, vehicula
+                                                                            volutpat laoreet vel, consequat eu mauris. <a href="#">Read more...</a></li>
+                                                                        <li class="news-item">Nunc ultrices tortor eu massa placerat posuere. Vivamus viverra sagittis nunc. Nunc
+                                                                            et imperdiet magna. Mauris sed eros nulla. <a href="#">Read more...</a></li>
+                                                                        <li class="news-item">Morbi sodales tellus sit amet leo congue bibendum. Ut non mauris eu neque fermentum
+                                                                            pharetra. <a href="#">Read more...</a></li>
+                                                                        <li class="news-item">In pharetra suscipit orci sed viverra. Praesent at sollicitudin tortor, id sagittis
+                                                                            magna. Fusce massa sem, bibendum id. <a href="#">Read more...</a> </li>
+                                                                        <li class="news-item">Maecenas nec ligula sed est suscipit aliquet sed eget ipsum. Suspendisse id auctor
+                                                                            nibh. Ut porttitor volutpat augue, non sodales odio dignissi id. <a href="#">Read more...</a></li>
+                                                                        <li class="news-item">Onec bibendum consectetur diam, nec euismod urna venenatis eget. Cras consequat
+                                                                            convallis leo. <a href="#">Read more...</a> </li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="panel-footer">
+                                    
+                                                        </div>
+                                                    </div>
+                                                </div>            
+                    </div>
+                </div>  
+    <script type="text/javascript">
+        $(function () {
+            $("#demo3").bootstrapNews({
+                newsPerPage: 3,
+                autoplay: true,
+                
+                onToDo: function () {
+                    //console.log(this);
+                }
+            });
+            $("#demo2").bootstrapNews({
+                newsPerPage: 3,
+                autoplay: true,
+                
+                onToDo: function () {
+                    //console.log(this);
+                }
+            });
+            $("#demo1").bootstrapNews({
+                newsPerPage: 3,
+                autoplay: true,
+                
+                onToDo: function () {
+                    //console.log(this);
+                }
+            });
+        });
+    </script>
+  </div>
+  <br><br><br>
+    <div class="container" style="background: rgba(0,0,0,0.5);" id="aboutus">
+       <p align="center" style="color: white; font-size: 30px">About Us</p>
+       <p align="justified" style="color: white; font-size: 17px">Medicine Guide is an initiative to help users easily find nearest Medicine Shops according to their location.
+            It is useful in situations when you want to find about your medicine availability in the nearest dispensary or pharmacy.
+                 <br>This site is developed by the team Debuggers. <a href="#">Know more about us</a>
+                 <br>This site also provides you with the best options of alternatives if your chosen medicine doesnt appear to be present.</p>
+    </div>
+    <br><br>
+    <div class="container" style="background: rgba(0,0,0,0.5);" id="search">
+       <p align="center" style="color: white; font-size: 30px">Search</p>
+       <p align="justified" style="color: white; font-size: 17px">The site provides Functionality of Searching your Medicine Shop by the various parameters of selection like:
+            <ul align="justified" style="color: white; font-size: 17px">
+                <li>Medicine name</li>
+                <li>Pincode</li>
+            </ul></p>
+            <p align="justified" style="color: white; font-size: 17px">
+            Proceed to Search <a href="searchres.html">here</a></p>
+    </div>
+    <br><br><br>
+    <div class="container" style="background: rgba(0,0,0,0.5);" id="category">
+       <p align="center" style="color: white; font-size: 30px">Category</p>
+       <p align="justified" style="color: white; font-size: 17px">
+          The Available Medicines can be categorized in the following categories:-
+            <ul align="justified" style="color: white; font-size: 17px">
+                <li>Related to Digestive System</li>
+                <li>Related to Cardiovascular System</li>
+                <li>Related to Central Nervous System</li>
+                <li>Pain killers</li>
+                <li>Related to Anasthesia</li>
+                <li>Related to Musculo-Skeletal Disorders</li>
+                <li>Related to Diseases of the Eye</li>
+                <li>Related to Ear, Nose diseases</li>
+                <li>Related to Respiratory Problems</li>
+                <li>Related to Endocrine diseases</li>
+                <li>Related to Reproductive or Urinary System</li>
+                <li>Related to Contraception</li>
+                <li>Related to Gynecology</li>
+                <li>Related to Skin related diseases</li>
+                <li>Related to Infections</li>
+                <li>Related to Immune Systems</li>
+                <li>Related to Allergic Disorders</li>
+                <li>Related to Nutrition</li>
+                <li>Related to Neoplastic Disorders</li>
+                <li>Related to Diagnostics</li>
+                <li>Related to Eusthansia</li>
+                <li>Related to Digestive System</li>
+            </ul>
+       </p>
+    </div>    
+      <br><br><br>
+    <div class="container" style="background: rgba(0,0,0,0.5);" id="helpdesk">
+       <p align="center" style="color: white; font-size: 30px">Help Desk</p>
+       <p align="justified" style="color: white; font-size: 17px">
+         Having difficulty browsing the site, visit our <a href="helpcust.html">Help Desk</a>.
+       </p>
+    </div>  
+    <br><br>
+    <footer class="footer">
+      <div class="container" style="background: rgba(0,0,0,0.5);color:white">
+        <div class="row">
+          <style type="text/css">
+            .fa {
+                padding: 20px;
+                font-size: 25px;
+                border-radius: 50%;
+                text-align: center;
+                text-decoration: none;
+              }
+
+            /* Add a hover effect if you want */
+            .fa:hover {
+                opacity: 0.7;
+              }
+
+            /* Set a specific color for each brand */
+
+                /* Facebook   */
+            .fa-facebook {
+                background: #3B5998;
+                color: white;
+              }
+
+            /* Twitter */
+            .fa-twitter {
+              background: #55ACEE;
+              color: white;
+              }
+          </style>
+          <div class="col"><img src="mediguide.jpeg" height="133px" width="210px"/></div>
+          <div class="col"><br><br><p style="font-size: 15px">Created by Team Debuggers. <a href="#">Know about us here.</a></p></div>
+          <div class="col"><p style="font-size: 17px">Contact Us<p> <a href="#" class="fa fa-facebook"></a> <a href="#" class="fa fa-twitter"></a></div>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
